@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Média Ponderada</title>
+    </head>
+    <body>
+        <script>
+            let nota1 = prompt("Qual a sua primeira nota?");
+            let peso1 = prompt("Qual o peso da primeira nota?");
+            let nota2 = prompt("Qual sua segunda nota?");
+            let peso2 = prompt("Qual o peso da segunda nota?");
+            let nota3 = prompt("Qual sua terceira nota?");
+            let peso3 = prompt("Qual o peso da terceira nota?");
+            nota1 = Number(nota1) * Number(peso1);
+            nota2 = Number(nota2) * Number(peso2);
+            nota3 = Number(nota3) * Number(peso3);
+            pesototal = Number(peso1) + Number(peso2) + Number(peso3);
+            let media = (nota1 + nota2 + nota3) / pesototal;
+            document.write(`<h2>Sua media final é:${media.toFixed(2)}</h2>`);
+            if (media >= 7) {
+                document.write("<h2>Você foi aprovado(a)</h2>");
+            } else {
+                document.write("<h2>Você foi reprovado(a)</h2>");
+            }
+        </script>
+    </body>
+</html>
